@@ -36,7 +36,7 @@ function Signup(props){
         <>
         <form onSubmit={handleSubmit}>
             <h1>Sign Up Here</h1>
-            <select value='type'>
+            <select >
                 <option value='employee'>Job-Seeker</option>
                 <option valer='empolyer'>Employer</option>
             </select>
