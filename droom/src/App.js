@@ -2,12 +2,12 @@ import React from 'react';
 import { withRouter } from "react-router-dom"
 import './App.css';
 import Nav from './components/Nav';
+import MainPage from './components/MainPage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Droom</h1>
-      <Nav />
+    <div className="App">      
+      <MainPage />      
     </div>
   );
 }

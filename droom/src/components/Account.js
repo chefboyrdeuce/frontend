@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function Account() {
+function Account(props) {
+    
     return(
         <>
         <h1>Name: John Deer</h1>
