@@ -6,6 +6,7 @@ function Signin(props) {
     const [userCredentials, setUserCredential] = useState({
         email: '',
         password: '',
+        type: '',
     })
 
     const handleChange = (e) => {
@@ -31,7 +32,7 @@ function Signin(props) {
         <>
         <form onSubmit={handleSubmit}>
             <h1>Sign In Here</h1>
-            <select>
+            <select name='type'>
                 <option value='employee'>Job-Seeker</option>
                 <option valer='empolyer'>Employer</option>
             </select>

@@ -23,8 +23,8 @@ function Nav() {
         <nav>
             <Link to='/signin'>Sign in|</Link>
             <Link to='/signup'>Sign up|</Link>
-            {<Link to='/seeker/dashboard'>Job-Seeker Swiping|</Link>}
-           {signedIn && <Link to='/seeker/search'>Search for Jobs|</Link>}
+            {signedIn && <Link to='/seeker/dashboard'>Job-Seeker Swiping|</Link>}
+            {signedIn && <Link to='/seeker/search'>Search for Jobs|</Link>}
             {signedIn && <Link to='/seeker/account'>Account|</Link>}
             {signedIn && <Link to='/company/search'>Search for Employees|</Link>}
             {signedIn && <Link to='/company/dashboard'>Company Swiping|</Link>}
