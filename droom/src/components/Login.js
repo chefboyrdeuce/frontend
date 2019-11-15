@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import api from '../utils/api';
-import { tsPropertySignature } from '@babel/types';
 
 function Signin(props) {
     const [userCredentials, setUserCredential] = useState({
