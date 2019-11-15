@@ -16,20 +16,23 @@ function Nav() {
     const signedIn = getToken()
     return(
         <>
-        <div>
+        <div className='navWrapper'>
+        <div className='Logo'>
           <h1 className='title'>Droom</h1>
           <p className='slogan'>Swipe for your check</p>
         </div>
         <nav>
-            <Link to='/signin'>Sign in|</Link>
-            <Link to='/signup'>Sign up|</Link>
-            {signedIn && <Link to='/seeker/dashboard'>Job-Seeker Swiping|</Link>}
-            {signedIn && <Link to='/seeker/search'>Search for Jobs|</Link>}
-            {signedIn && <Link to='/seeker/account'>Account|</Link>}
-            {signedIn && <Link to='/company/search'>Search for Employees|</Link>}
-            {signedIn && <Link to='/company/dashboard'>Company Swiping|</Link>}
+            <Link to='/signin'>Sign in</Link>
+            <Link to='/signup'>Sign up</Link>
+            {signedIn && <Link to='/seeker/dashboard'>Job-Seeker Swiping</Link>}
+            {signedIn && <Link to='/seeker/search'>Search for Jobs</Link>}
+            {signedIn && <Link to='/seeker/account'>Account</Link>}
+            {signedIn && <Link to='/company/search'>Search for Employees</Link>}
+            {signedIn && <Link to='/company/dashboard'>Company Swiping</Link>}
             {signedIn &&<Link to='/company/listing'>Create a Listing</Link>}
         </nav>
+        </div>
+        
         <Route exact path='/signin' component={Signin} />
         <Route exact path='/signup' component={Signup} />
         <ProtectedRoute exact path='/seeker/dashboard' component={SeekerSwiping} />
