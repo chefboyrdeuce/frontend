@@ -1,2 +1,13 @@
-//this folder will contain where the job seeker can search 
-//for a job swiping right or left to accept or not. etc
+import React from 'react';
+
+function CompanySwiping() {
+    return(
+        <>
+        <h1>Name</h1>
+        <p>Description</p>
+        <p>Qualifications</p>
+        </>
+    )
+}
+
+export default CompanySwiping
