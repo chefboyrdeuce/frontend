@@ -24,12 +24,18 @@ function Nav() {
         <nav>
             <Link to='/signin'>Sign in</Link>
             <Link to='/signup'>Sign up</Link>
-            {signedIn && <Link to='/seeker/dashboard'>Job-Seeker Swiping</Link>}
+            {/* {signedIn && <Link to='/seeker/dashboard'>Job-Seeker Swiping</Link>}
             {signedIn && <Link to='/seeker/search'>Search for Jobs</Link>}
             {signedIn && <Link to='/seeker/account'>Account</Link>}
             {signedIn && <Link to='/company/search'>Search for Employees</Link>}
             {signedIn && <Link to='/company/dashboard'>Company Swiping</Link>}
-            {signedIn &&<Link to='/company/listing'>Create a Listing</Link>}
+            {signedIn &&<Link to='/company/listing'>Create a Listing</Link>} */}
+            {<Link to='/seeker/dashboard'>Job-Seeker Swiping</Link>}
+            {<Link to='/seeker/search'>Search for Jobs</Link>}
+            { <Link to='/seeker/account'>Account</Link>}
+            {<Link to='/company/search'>Search for Employees</Link>}
+            { <Link to='/company/dashboard'>Company Swiping</Link>}
+            {<Link to='/company/listing'>Create a Listing</Link>}
         </nav>
         </div>
         
